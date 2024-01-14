@@ -31,6 +31,9 @@ main {
 
 main .main-new {
   padding: 30px 15px;
+  max-width: 375px;
+  display: grid;
+  justify-content: center;
 }
 
 main nav {
@@ -78,4 +81,32 @@ main nav .menu {
   margin-top: 20px;
   font-weight: 900;
   letter-spacing: 5px;
+}
+
+.blue-news-section {
+  padding: 15px;
+}
+
+main .blue-news {
+  background-color: var(--Very-dark-blue);
+  color: var(--Off-white);
+  padding: 25px 20px;
+}
+
+main .blue-news h1 {
+  color: var(--Soft--orange);
+  margin-bottom: 30px;
+}
+
+main .blue-news h3 {
+  margin-bottom: 15px;
+}
+
+main .blue-news p {
+  color: var(--Grayish-blue);
+  font-weight: 300;
+  padding-bottom: 30px;
+  border-bottom: 1px solid;
+  border-color: var(--Grayish-blue);
+  margin-bottom: 30px;
 }
