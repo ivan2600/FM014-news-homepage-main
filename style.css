@@ -42,11 +42,12 @@ main nav {
   flex-direction: row;
   justify-content: space-between;
   padding: 30px 20px 5px 20px;
+  position: relative;
 }
 
 main nav .logo {
   height: 30px;
-  position: relative;
+  
 }
 
 main nav .menu-icon {
