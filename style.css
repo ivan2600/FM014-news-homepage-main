@@ -81,21 +81,25 @@ main nav .menu {
   margin-top: 20px;
   font-weight: 900;
   letter-spacing: 5px;
+  margin-bottom: 20px;
 }
 
 .blue-news-section {
   padding: 15px;
+  margin-bottom: 30px;
 }
 
 main .blue-news {
   background-color: var(--Very-dark-blue);
   color: var(--Off-white);
   padding: 25px 20px;
+  padding-bottom: 0;
 }
 
 main .blue-news h1 {
   color: var(--Soft--orange);
   margin-bottom: 30px;
+  font-size: 30px;
 }
 
 main .blue-news h3 {
@@ -109,4 +113,42 @@ main .blue-news p {
   border-bottom: 1px solid;
   border-color: var(--Grayish-blue);
   margin-bottom: 30px;
+}
+
+main .blue-news .last-p {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.more-news {
+  padding: 15px;
+}
+
+.more-news .article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 35px;
+}
+
+.more-news .article img {
+  width: 100px;
+  margin-right: 25px;
+}
+
+.more-news .article span {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--Grayish-blue);
+}
+
+.more-news .article h4 {
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.more-news .article p {
+  color: var(--Dark-grayish-blue);
+  font-size: 1.5rem;
+  line-height: 2.4rem;
 }
