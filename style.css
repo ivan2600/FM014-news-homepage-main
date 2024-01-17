@@ -60,6 +60,10 @@ main nav .menu-icon {
   margin: 0 auto;
 }
 
+.main-img-desktop {
+  display: none;
+}
+
 .main-new-text h1 {
   margin-top: 20px;
   font-size: 4rem;
@@ -193,4 +197,102 @@ main .blue-news .last-p {
 
 .close {
   cursor: pointer;
+}
+.menu-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 880px) {
+  main {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 300px 3fr 3fr;
+    grid-template-areas: 
+      "nav nav nav"
+      "img img blues"
+      "texto texto blues"
+      "more more more";
+  }
+  .menu-desktop {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-desktop {
+    list-style-type: none;
+  }
+  
+  .menu-desktop li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    line-height: 5rem;
+    font-weight: 500;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  
+  main nav .menu-icon {
+    height: 18px;  
+    cursor: pointer;
+    display: none;
+  }
+  .main-img {
+    display: none;
+  }
+  .main-img-desktop {
+    display: block;
+    height: 300px;
+    grid-area: img;
+    margin-left: 250px;
+
+  }
+  main nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 20px 5px 20px;
+    position: relative;
+    grid-area: nav;
+  }
+  .blue-news-section {
+    padding: 15px;
+    margin-bottom: 30px;
+    grid-area: blues;
+    margin-top: 15px;
+    
+  }
+  .main-new-text {
+    grid-area: texto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 320px;
+    margin-left: 250px;
+  }
+  .main-new-text h1{
+    font-size: 5rem;
+    line-height: 5rem;
+    width: 300px;
+    margin-right: 50px;
+  }
+  .cuerpo {
+    grid-area: cuerpo;
+    width: 380px;
+    margin-top: 15px;
+  }
+  .more-news {
+    padding: 15px;
+    grid-area: more;
+    display: flex;
+    flex-direction: row;
+    padding-right: 150px;
+    position: absolute;
+    top: 650px;
+    left: 150px;
+  }
+  .article {
+    margin-right: 10px;
+    min-width: 270px;
+    
+  }
 }
